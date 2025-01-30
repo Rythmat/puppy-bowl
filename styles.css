@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+
+li {
+  font-size: 2vh;
+  margin: 5vh;
+}
