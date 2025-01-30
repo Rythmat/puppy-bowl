@@ -14,5 +14,15 @@ const fetchPlayers = async() => {
   console.log(state.players);
 }
 
+//Renders the puppy info onto the page
+const renderPlayers = async() => {
+  await fetchPlayers();
+  const ul = document.querySelector('#pawster');
+  state.players.forEach((player) => {
+    const li = document.createElement('li');
+    li.innerText = player.name + ' the ' + player.breed;
+    ul.append(li);
+  });
+}
 
-fetchPlayers();
+renderPlayers();
