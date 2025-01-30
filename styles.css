@@ -3,8 +3,16 @@ header {
   justify-content: center;
 }
 
-
 li {
   font-size: 2vh;
   margin: 5vh;
+}
+
+li:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
 }
