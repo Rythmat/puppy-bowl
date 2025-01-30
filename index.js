@@ -68,12 +68,14 @@ const renderDetails = async() => {
     <p style="display: flex; justify-content: center;"> Current play status: On the ${state.details.status} </p>
   `
   main.innerHTML = detailsHTML;
+  //creating a button to return to the original display
   const button = document.createElement('button');
   button.innerText = 'Back';
+  //Event listener looking for a click that will recall the original render function
   button.addEventListener('click', () => {
     renderPlayers();
   });
-
+  //adding the button to the page
   main.append(button);
 }
 
